@@ -7,8 +7,8 @@ on:
       - dev
 env:
   MONGODB_DB_NAME: gha-demo # env variable applies to all jobs
-  MONGODB_USERNAME: kojiwong22
-  MONGODB_PASSWORD: Dj5MYPZopkuZ5Hxr
+  MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
+  MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
   MONGODB_CLUSTER_ADDRESS: test.ddyvk.mongodb.net
   PORT: 8080
 jobs:
